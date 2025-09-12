@@ -1,69 +1,419 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VIZORA, inc.</title>
-    <meta
-      name="description"
-      content="VIZORA, inc. - XR/AR/VR 開発とアプリケーション開発を手掛ける会社"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ヘッダー -->
-    <header>
-      <h1>VIZORA, inc.</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">会社概要</a></li>
-          <li><a href="#services">事業内容</a></li>
-          <li><a href="#works">制作実績</a></li>
-          <li><a href="#contact">お問い合わせ</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- メインビジュアル -->
-    <section id="hero">
-      <h2>世界をもっと便利に、もっと楽しく</h2>
-      <p>XRとアプリケーション開発で未来を創造する</p>
-    </section>
+  <!-- ページタイトル -->
+  <title>株式会社VIZORA | VR・ARアプリ・ゲームの受託開発会社</title>
 
-    <!-- 会社概要 -->
-    <section id="about">
-      <h2>会社概要</h2>
-      <p>
-        VIZORA, inc.
-        はXR（AR/VR/MR）やスマートフォンアプリの開発を行う企業です。
-      </p>
-    </section>
+  <!-- メタディスクリプション（検索結果に出る要約文） -->
+  <meta name="description" content="株式会社VIZORAは静岡を拠点とするVR・ARアプリ開発、ゲーム開発、PCソフト・スマホアプリの受託開発会社です。現場で培ったノウハウと先端技術を活かし、お客様のアイデアを「カタチ」にします。">
 
-    <!-- 事業内容 -->
-    <section id="services">
-      <h2>事業内容</h2>
+  <!-- メタキーワード（Googleはほぼ使わないがBingや一部検索エンジン向け） -->
+  <meta name="keywords" content="VIZORA, VR開発, AR開発, アプリ開発, ゲーム開発, ソフトウェア開発, 静岡, 受託開発">
+
+  <!-- OGP（SNSシェア時に使われる情報） -->
+  <meta property="og:title" content="株式会社VIZORA | VR・ARアプリ・ゲームの受託開発会社">
+  <meta property="og:description" content="株式会社VIZORAはVR・ARアプリ・ゲーム開発に強みを持つ受託開発会社です。アイデアを「カタチ」にします。">
+  <meta property="og:image" content="https://vizora.co.jp/images/og-image.jpg">
+  <meta property="og:url" content="https://vizora.co.jp/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="株式会社VIZORA">
+
+  <!-- Twitterカード -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="株式会社VIZORA | VR・ARアプリ・ゲームの受託開発会社">
+  <meta name="twitter:description" content="株式会社VIZORAはVR・ARアプリ・ゲーム開発に強みを持つ受託開発会社です。">
+  <meta name="twitter:image" content="https://vizora.co.jp/images/og-image.jpg">
+
+  <!-- 構造化データ（会社情報を検索エンジンに伝えるJSON-LD） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "株式会社VIZORA",
+    "url": "https://vizora.co.jp/",
+    "logo": "https://vizora.co.jp/images/logo-vizora.png",
+    "description": "株式会社VIZORAはVR・ARアプリ開発、ゲーム開発、PCソフト・スマホアプリの受託開発会社です。",
+    "foundingDate": "2024-10-21",
+    "founder": {
+      "@type": "Person",
+      "name": "山田 清貴"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "中島203-1 第二昌栄ビル2F",
+      "addressLocality": "静岡市駿河区",
+      "postalCode": "422-8046",
+      "addressCountry": "JP"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@vizora.co.jp",
+      "contactType": "customer service"
+    }
+  }
+  </script>
+</head>
+
+
+  <!-- ヘッダー -->
+  <header>
+    <h1>VIZORA,inc.</h1>
+    <nav>
       <ul>
-        <li>XR/VR/AR 開発</li>
-        <li>スマートフォンアプリ開発</li>
-        <li>教育・トレーニング用システム構築</li>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#services">提供サービス</a></li>
+        <li><a href="#works">開発事例</a></li>
+        <li><a href="#strengths">VIZORAの強み</a></li>
+        <li><a href="#flow">開発の流れ</a></li>
+        <li><a href="#company">会社概要</a></li>
+        <li><a href="#sitemap">サイトマップ</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
       </ul>
-    </section>
+    </nav>
+  </header>
 
-    <!-- 制作実績 -->
-    <section id="works">
-      <h2>制作実績</h2>
-      <p>準備中</p>
-    </section>
+  <!-- Top -->
+<!-- Top -->
+<section id="top">
+  <div class="key-visual">
+    <img src="images/key-visual.jpg" alt="VIZORA キービジュアル">
+  </div>
 
-    <!-- お問い合わせ -->
-    <section id="contact">
-      <h2>お問い合わせ</h2>
-      <p>メール: <a href="mailto:info@vizora.jp">info@vizora.jp</a></p>
-    </section>
+  <div class="top-content">
+    <h2 class="catch-copy">
+      時代を超えた発想、<br>
+      新しい体験を <span>「カタチ」</span> にする。
+    </h2>
 
-    <!-- フッター -->
-    <footer>
-      <p>&copy; 2025 VIZORA, inc. All Rights Reserved.</p>
-    </footer>
-  </body>
+    <p class="description">
+      VIZORAはVR & ARアプリ、ゲーム開発に強みを持つクリエイティブ集団です。<br>
+      メンバーそれぞれが面白い技術や新しい体験に関心があり、自分たちの手でそうしたものを作り上げることに情熱を持っています。<br><br>
+      “時代を超えた発想、新しい体験を「カタチ」にする” というミッションを体現すべく同志で集い、新たに会社を立ち上げました。<br><br>
+      VIZORAの開発の根幹を担っているのは、ゲーム開発で得たスキルと経験です。<br>
+      ゲーム開発ではもちろん、それ以外の開発においても遊び心を忘れず「使って楽しい」「ワクワクする体験」といった要素をプロダクトに落とし込み開発し続けております。
+    </p>
+  </div>
+</section>
+
+
+<!-- 提供サービス -->
+<section id="services">
+  <h2>提供サービス</h2>
+
+  <div class="service-cards">
+
+    <!-- VR & AR アプリ開発 -->
+    <div class="service-card">
+      <img src="images/service-vr.jpg" alt="VR & AR アプリ開発">
+      <div class="card-content">
+        <div class="icon"><img src="icons/vr-icon.svg" alt="VR Icon"></div>
+        <h3>VR & AR アプリ開発</h3>
+        <p>
+          大手ゲーム会社VR部署のエンジニアが集まり、立ち上げた会社がVIZORAです。
+          VRの技術をゲーム開発以外にも応用したいという気持ちと、アイデアを実現したい
+          数多くのお客様の声にお応えする形で独立し、数々のプロダクトを開発してまいりました。
+        </p>
+      </div>
+    </div>
+
+    <!-- スマホアプリ開発 -->
+    <div class="service-card">
+      <img src="images/service-mobile.jpg" alt="スマホアプリ開発">
+      <div class="card-content">
+        <div class="icon"><img src="icons/mobile-icon.svg" alt="Mobile Icon"></div>
+        <h3>スマホアプリ開発</h3>
+        <p>
+          最も身近で親しみのあるデジタルプロダクトがスマホアプリです。
+          ゲームからツール、学習アプリまで、様々な要望にお応えし幅広い分野の開発を
+          行ってきた経験があります。UIのデザインからコーディングまでお任せください。
+          Android/iOS問わず対応可能です。
+        </p>
+      </div>
+    </div>
+
+    <!-- ゲーム開発 -->
+    <div class="service-card">
+      <img src="images/service-game.jpg" alt="ゲーム開発">
+      <div class="card-content">
+        <div class="icon"><img src="icons/game-icon.svg" alt="Game Icon"></div>
+        <h3>ゲーム開発</h3>
+        <p>
+          ゲーム会社で得た知識と経験を武器に、シンプルなカジュアルゲームから
+          複数の開発会社と協業して制作した大規模なソーシャルゲームまで
+          沢山の制作に携わってまいりました。現場ならではのノウハウと遊び心を持って
+          開発をリードいたします。
+        </p>
+      </div>
+    </div>
+
+    <!-- PCソフトウェア開発 -->
+    <div class="service-card">
+      <img src="images/service-pc.jpg" alt="PCソフトウェア開発">
+      <div class="card-content">
+        <div class="icon"><img src="icons/pc-icon.svg" alt="PC Icon"></div>
+        <h3>PCソフトウェア開発</h3>
+        <p>
+          もちろんPCをプラットフォームとしたソフトウェアの開発も可能です。
+          以前には管理ソフトや、見積もりソフトなどの制作も承っております。
+          まずはアイデアからお聞かせください。どのような希望やアイデアでも
+          実現出来るよう、スタッフ総出で努めてまいります。
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 開発事例 -->
+<section id="works">
+  <h2>開発事例</h2>
+
+  <!-- 事例1: ポーカータイマーポケット -->
+  <div class="work-item">
+    <div class="work-images slider">
+      <div class="slide"><img src="images/work-pokertimer-1.jpg" alt="ポーカータイマーポケット 画像1"></div>
+      <div class="slide"><img src="images/work-pokertimer-2.jpg" alt="ポーカータイマーポケット 画像2"></div>
+      <div class="slide"><img src="images/work-pokertimer-3.jpg" alt="ポーカータイマーポケット 画像3"></div>
+    </div>
+
+    <div class="work-content">
+      <h3>ポーカータイマーポケット</h3>
+      <p class="category">自社企画/開発</p>
+      <p>
+        自社企画/開発のホームポーカー用のブラインドタイマー。
+        直感的に使いやすく、シンプルで見やすい、そして眺めていても美しいタイマーが欲しいという想いから開発。
+        経験者でも組むのが大変なブラインドストラクチャーは「オートストラクチャー機能」で、
+        AIが導き出すアルゴリズムを用い最適な設定を生成出来る。
+        またタイマー画面のビジュアライザーには9つの魅惑的なシェーダーアニメーションを内蔵。
+        各社アプリストアで好評発売中。
+      </p>
+    </div>
+  </div>
+
+  <!-- 事例2: VPIPカウンター -->
+  <div class="work-item">
+    <div class="work-images slider">
+      <div class="slide"><img src="images/work-vpip-1.jpg" alt="VPIPカウンター 画像1"></div>
+      <div class="slide"><img src="images/work-vpip-2.jpg" alt="VPIPカウンター 画像2"></div>
+    </div>
+
+    <div class="work-content">
+      <h3>VPIPカウンター</h3>
+      <p class="category">自社企画/開発</p>
+      <p>
+        ポーカーのプレイスタイルを把握するのにVPIPは大事な指標です。
+        このアプリではプレイ中のハンドをタップで記録していくことで、VPIPがリアルタイムで計算され表示されます。
+        このVPIPの値は大会やトーナメントごとに保存ができ、あとで振り返って分析出来ます。
+        プレイが攻めすぎているのか、それとも保守的すぎるのかを客観的に把握して
+        次回プレイの戦略に生かすことができます。
+        ニッチだけれど需要はある、マニアックなアプリです。
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- VIZORAの強み -->
+<section id="strengths">
+  <h2>VIZORAの強み</h2>
+
+  <!-- 強み1 -->
+  <div class="strength-item">
+    <div class="strength-number">1</div>
+    <div class="strength-content">
+      <h3>現場で培ったノウハウ</h3>
+      <p>
+        弊社のスタッフはキャリアのスタート以来、現場第一線で経験とノウハウを積み上げてきました。
+        高い開発力と応用力を武器に、デバイスやジャンルの垣根を越えて、
+        お客様の理想実現に貢献するプロダクトを提案・開発することができます。
+      </p>
+    </div>
+  </div>
+
+  <!-- 強み2 -->
+  <div class="strength-item">
+    <div class="strength-number">2</div>
+    <div class="strength-content">
+      <h3>エンジニア主導</h3>
+      <p>
+        VIZORAは代表の山田以下、社内の大多数がエンジニア。
+        開発に携わるエンジニア自身がお客様とコミュニケーションを取り続けることで、
+        柔軟な対応と開発クオリティの向上を実現します。
+      </p>
+    </div>
+  </div>
+
+  <!-- 強み3 -->
+  <div class="strength-item">
+    <div class="strength-number">3</div>
+    <div class="strength-content">
+      <h3>先端技術のスペシャリスト</h3>
+      <p>
+        創業以来VRやARの技術に始まり、AI、モーションキャプチャ、360度3Dカメラ等、
+        最新の開発ツールを常に取り入れ、新しいテクノロジーに向き合ってきました。
+        実現方法のイメージが湧きづらいプロジェクトに対しても、実現可能な開発をご提案いたします。
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- 開発の流れ -->
+<section id="flow">
+  <h2>開発の流れ</h2>
+
+  <!-- Step 1 -->
+  <div class="flow-step">
+    <div class="flow-image">
+      <img src="images/flow-1.jpg" alt="企画のご相談">
+    </div>
+    <div class="flow-content">
+      <h3>1. 企画のご相談</h3>
+      <p>
+        創業以来VRやARの技術に始まり、AI、モーションキャプチャ、360度3Dカメラ等、
+        最新の開発ツールを常に取り入れ、新しいテクノロジーに向き合ってきました。
+        実現方法のイメージが湧きづらいプロジェクトに対しても、実現可能な開発をご提案いたします。
+      </p>
+    </div>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="flow-step">
+    <div class="flow-image">
+      <img src="images/flow-2.jpg" alt="要件定義">
+    </div>
+    <div class="flow-content">
+      <h3>2. 要件定義</h3>
+      <p>
+        描いた企画・プロダクトの姿から、開発に必要な機能や条件を分かりやすくまとめていきます。
+        ご予算に合わせて仕様のカスタマイズを行うなど、お客様が納得した状態で開発に移れるようにサポートしてまいります。
+      </p>
+    </div>
+  </div>
+
+  <!-- Step 3 -->
+  <div class="flow-step">
+    <div class="flow-image">
+      <img src="images/flow-3.jpg" alt="開発">
+    </div>
+    <div class="flow-content">
+      <h3>3. 開発</h3>
+      <p>
+        プロフェッショナルが集結し、開発に取り組みます。
+        必要に応じて開発のフェーズを細かく区切ったり、本開発の前に技術検証・モックアップを作成するなど、
+        開発の確度を高める施策も行っております。
+      </p>
+    </div>
+  </div>
+
+  <!-- Step 4 -->
+  <div class="flow-step">
+    <div class="flow-image">
+      <img src="images/flow-4.jpg" alt="リリース＆運用">
+    </div>
+    <div class="flow-content">
+      <h3>4. リリース＆運用</h3>
+      <p>
+        アプリのリリースはゴールではなく、お客様のビジネスの成功に向けたスタートです。
+        リリース対応やリリース後のブラッシュアップ等を通じて、
+        お客さまと共にプロダクトを育ててまいります。
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- 会社概要 -->
+<section id="company">
+  <h2>会社概要</h2>
+
+  <!-- 会社写真 -->
+  <div class="company-image">
+    <img src="images/company-office.jpg" alt="会社オフィス写真">
+  </div>
+
+  <!-- 会社情報 -->
+  <div class="company-info">
+    <dl>
+      <dt>法人名</dt>
+      <dd>株式会社VIZORA</dd>
+
+      <dt>設立</dt>
+      <dd>2024年10月21日</dd>
+
+      <dt>代表取締役</dt>
+      <dd>山田 清貴</dd>
+
+      <dt>所在地</dt>
+      <dd>
+        〒422-8046<br>
+        静岡県 静岡市 駿河区 中島203-1<br>
+        第二昌栄ビル2F
+      </dd>
+
+      <dt>事業内容</dt>
+      <dd>
+        VR &amp; ARアプリの企画と開発<br>
+        PCソフトウェアの企画と開発<br>
+        ゲームの企画と開発<br>
+        モバイルアプリの企画と開発
+      </dd>
+
+      <dt>お問い合わせ</dt>
+      <dd><a href="mailto:info@vizora.co.jp">info@vizora.co.jp</a></dd>
+    </dl>
+  </div>
+</section>
+
+
+<!-- サイトマップ -->
+<section id="sitemap">
+  <div class="sitemap-logo">
+    <img src="images/logo-vizora.png" alt="VIZORA ロゴ">
+  </div>
+
+  <h2>サイトマップ</h2>
+  <div class="sitemap-links">
+    <a href="#philosophy">企業理念</a>
+    <a href="#services">提供サービス</a>
+    <a href="#works">開発事例</a>
+    <a href="#strengths">VIZORAの強み</a>
+    <a href="#flow">開発の流れ</a>
+    <a href="#company">会社概要</a>
+  </div>
+</section>
+
+<!-- お問い合わせ -->
+<section id="contact">
+  <h2>お問い合わせ</h2>
+  <p>
+    株式会社VIZORAは、スマートフォン向けアプリケーションおよび
+    VR &amp; ARアプリケーションの開発を行っております。
+    小規模なアイデアから大規模なプロジェクトまで、ご予算に応じた
+    最適なソリューションをご提供します。開発のご相談やお見積もりは、
+    お気軽にお問い合わせください。
+  </p>
+
+  <div class="contact-button">
+    <a href="contact.html">お問い合わせフォーム</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 VIZORA Co., Ltd. All Rights Reserved.</p>
+  </footer>
+</section>
+
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2025 VIZORA,inc. All Rights Reserved.</p>
+  </footer>
+
+</body>
 </html>
