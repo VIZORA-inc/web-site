@@ -394,7 +394,7 @@ padding-bottom: 16px;
 }
 
 #contact h2 {
-  font-size: 21px;
+  font-size: 17.5px;
   color: #565B70;
   margin-bottom: 32px;
 }
@@ -414,7 +414,7 @@ padding-bottom: 16px;
   justify-content: center;
   gap: 8px; /* テキストとアイコンの間隔 */
   padding: 10px 24px;
-  border: 2px solid #00B7B2;
+  border: 1px solid #00B7B2;
   border-radius: 32px;
   font-size: 17.5px;
   font-weight: bold;
