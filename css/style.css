@@ -198,3 +198,190 @@ padding-bottom: 16px;
   text-align: center;
 }
 
+/* =========================
+   VIZORAの強み
+   ========================= */
+
+.strength-list {
+  max-width: 1264px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3列横並び */
+  gap: 32px;
+  margin: 0 auto;
+}
+
+.strength-item {
+  text-align: left;
+}
+
+.strength-content {
+  display: flex;
+  align-items: center;   /* 縦方向中央揃え */
+  gap: 12px;             /* 画像とh3の間隔 */
+  margin-bottom: 1rem;
+}
+
+.strength-number {
+  width: 80px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.strength-content h3 {
+  font-size: 17.5px;
+  color: #565B70;
+  margin: 0;
+}
+
+.strength-item p {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #565B70;
+}
+
+
+.flow-list {
+  max-width: calc(480px * 2 + 32px); /* 480*2 + gap */
+  display: grid;
+  grid-template-columns: repeat(2, 480px); /* 固定幅2列 */
+  gap: 32px; /* 横・縦ともに32px */
+  margin: 0 auto;
+  justify-content: center; /* 中央寄せ */
+}
+
+.flow-step {
+  width: 480px;
+  height: 304px;
+  text-align: center;
+  box-sizing: border-box; /* 内側のpaddingを含める */
+}
+
+.flow-image img {
+  height: 184px;        /* 高さ固定 */
+  width: auto;          /* アスペクト比を維持 */
+  display: block;
+  margin: 0 auto 12px;  /* 中央揃え＋下余白 */
+}
+
+.flow-content h3 {
+  font-size: 17.5px;
+  color: #565B70;
+  margin-bottom: 0.5rem;
+}
+
+.flow-content p {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #565B70;
+}
+
+/* =========================
+   会社概要
+   ========================= */
+#company {
+  text-align: center; /* 全体を中央寄せ */
+}
+
+.company-wrapper {
+  max-width: 992px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.company-image img {
+  width: 992px;        /* 横幅を固定 */
+  max-width: 100%;     /* 画面幅が小さい場合は縮小 */
+  border-radius: 16px; /* 丸みをつける */
+  margin-bottom: 32px; /* 下に余白 */
+  display: block;
+}
+
+.company-info {
+  font-size: 14px;
+  color: #565B70;
+  max-width: 800px;  /* 読みやすい幅に制限 */
+  margin: 0 auto;    /* 中央に配置 */
+}
+
+.company-info dl {
+  font-size: 14px;
+  color: #565B70;
+  margin: 0;
+  padding: 0;
+}
+
+.company-info dt,
+.company-info dd {
+  display: block;       /* 縦並びにする */
+  margin: 0;            /* デフォルト余白リセット */
+  padding: 0;
+}
+
+.company-info dt {
+  font-weight: bold;    /* 見出しを太字に */
+  margin-top: 16px;     /* 各項目ごとに余白 */
+}
+
+.company-info dd {
+  margin-top: 4px;      /* dtとの間隔を少しあける */
+}
+
+
+/* =========================
+   サイトマップ
+   ========================= */
+#sitemap {
+  text-align: center;
+  padding: 64px 16px;
+}
+
+.sitemap-logo img {
+  width: 56px;
+  height: auto;
+  margin: 0 auto 24px;
+  display: block;
+}
+
+#sitemap h2 {
+  font-size: 17.5px;
+  color: #565B70;
+  margin-bottom: 32px;
+}
+
+/* ラッパー */
+.sitemap-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+.sitemap-links {
+  display: grid;
+  grid-template-columns: repeat(3, 176px); /* 3列固定幅 */
+  gap: 16px; /* 縦横16px */
+  justify-content: center; /* グリッド全体を中央に */
+}
+
+/* 各リンクをボタン風に */
+.sitemap-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border: 1px solid #00B7B2;
+  border-radius: 8px;
+  font-size: 17.5px;
+  font-weight: bold;
+  color: #565B70;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sitemap-links a:hover {
+  background-color: #00B7B2;
+  color: #fff;
+}
