@@ -1,0 +1,200 @@
+/* =========================
+   セクションの背景色設定
+   ========================= */
+
+/* Top セクション */
+#top {
+  background-color: #fffdfa;
+}
+
+/* 提供サービスセクション */
+#services {
+  background-color: #f5f3f2;
+}
+
+/* 開発事例 */
+#works {
+  background-color: #fffdfa;
+}
+
+/* VIZORAの強み */
+#strengths {
+  background-color: #f5f3f2;
+}
+
+/* 開発の流れ */
+#flow {
+  background-color: #fffdfa;
+}
+
+/* 会社概要 */
+#company {
+  background-color: #f5f3f2;
+}
+
+/* サイトマップ */
+#sitemap {
+  background-color: #fffdfa;
+}
+
+/* お問い合わせ */
+#contact {
+  background-color: #f5f3f2;
+}
+
+section {
+  padding-top: 64px;   /* タイトル上の余白 */
+    padding-bottom: 32px;   /* タイトル上の余白 */
+}
+
+section h2 {
+  text-align: center;
+  font-size: 21px;       /* フォントサイズ統一 */
+  margin: 0 0 32px;      /* 上余白なし、下32px */
+  color: #565B70;        /* 色統一 */
+  font-weight: bold;     /* タイトルなので強調 */
+}
+
+
+/* =========================
+   ヘッダー
+   ========================= */
+header {
+  width: 100%;                  /* 横幅いっぱい */
+  height: 48px;                 /* 高さ固定 */
+  background: #fff;             /* 背景白 */
+  display: flex;
+  justify-content: center;      /* ロゴを中央に */
+  align-items: center;          /* 縦中央 */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* 下に影 */
+  position: sticky;             /* スクロール時に上部固定 */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header .logo img {
+  height: 14px;   /* ロゴの高さ */
+  width: auto;
+  display: block;
+}
+
+#top {
+  text-align: center;     /* 中央寄せ */
+  padding: 32px 16px;     /* 上下に余白 */
+}
+
+#top .key-visual img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 32px;    /* 下に余白 */
+  display: block;
+}
+
+#top .catch-copy {
+  font-size: 21px;
+  line-height: 31.5px;
+  margin: 32px 0;         /* 上下32px */
+  font-weight: bold;
+  color: #333;
+}
+
+#top .catch-copy span {
+  color: #00B7B2;         /* 「カタチ」の部分 */
+}
+
+#top .description {
+  max-width: 800px;       /* 横幅を制限 */
+  margin: 0 auto;         /* 中央に配置 */
+  text-align: center;     /* ブロック自体は中央寄せ */
+}
+
+#top .description p {
+  display: inline-block;  /* 中央寄せブロック内で左揃え */
+  text-align: left;       /* 文字は左揃え */
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #555;
+  margin-bottom: 1.5em;
+}
+
+
+/* =========================
+   提供サービスカード
+   ========================= */
+
+
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 480px); /* 固定幅カードを2列 */
+  gap: 32px;                               /* カード間の余白を32px */
+  justify-content: center;                 /* 中央寄せ */
+  max-width: 992px;                        /* 480*2 + 32 の幅 */
+  margin: 0 auto;                          /* ページ中央に配置 */
+}
+
+.service-card {
+  width: 480px;
+  height: 432px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.service-card img {
+  width: 480px;
+  height: 280px;  /* 固定サイズ */
+  object-fit: cover;
+  display: block;
+}
+
+/* アイコンを画像とタイトルの間に配置（画像にかぶせる） */
+.card-content .icon {
+  position: absolute;
+  top: 250px;          /* 画像下あたり */
+  left: 10%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content .icon img {
+  width: 56px;
+  height: 56px;
+}
+
+.card-content {
+  text-align: center;
+padding-bottom: 16px;
+
+}
+
+.card-content h3 {
+  font-size: 17.5px;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #00a693;
+}
+
+.card-content p {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #333;
+  text-align: center;
+}
+
