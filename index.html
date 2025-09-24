@@ -10,6 +10,10 @@
 
    <link rel="stylesheet" href="css/style.css">
 
+   <!-- Swiper.js CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <!-- メタディスクリプション（検索結果に出る要約文） -->
   <meta name="description" content="株式会社VIZORAは静岡を拠点とするVR・ARアプリ開発、ゲーム開発、PCソフト・スマホアプリの受託開発会社です。現場で培ったノウハウと先端技術を活かし、お客様のアイデアを「カタチ」にします。">
 
@@ -58,6 +62,26 @@
     }
   }
   </script>
+
+  
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sliders = document.querySelectorAll('.work-images.swiper');
+    sliders.forEach(slider => {
+      new Swiper(slider, {
+        loop: true,
+        pagination: {
+          el: slider.querySelector('.swiper-pagination'),
+          clickable: true,
+        },
+        navigation: {
+          nextEl: slider.querySelector('.swiper-button-next'),
+          prevEl: slider.querySelector('.swiper-button-prev'),
+        },
+      });
+    });
+  });
+</script>
 </head>
 
 
@@ -173,53 +197,94 @@
 </section>
 
 <!-- 開発事例 -->
+<!-- 開発事例 -->
+<!-- 開発事例 -->
 <section id="works">
   <h2>開発事例</h2>
 
-  <!-- 事例1: ポーカータイマーポケット -->
-  <div class="work-item">
-    <div class="work-images slider">
-      <div class="slide"><img src="images/work-pokertimer-1.jpg" alt="ポーカータイマーポケット 画像1"></div>
-      <div class="slide"><img src="images/work-pokertimer-2.jpg" alt="ポーカータイマーポケット 画像2"></div>
-      <div class="slide"><img src="images/work-pokertimer-3.jpg" alt="ポーカータイマーポケット 画像3"></div>
+  <div class="works-list">
+    <!-- 事例1: ポーカータイマーポケット -->
+    <div class="work-item">
+      <div class="work-images swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/vpip01.png" alt="ポーカータイマーポケット 画像1"></div>
+          <div class="swiper-slide"><img src="images/vpip01.png" alt="ポーカータイマーポケット 画像2"></div>
+          <div class="swiper-slide"><img src="images/vpip01.png" alt="ポーカータイマーポケット 画像3"></div>
+        </div>
+        <!-- ページネーション -->
+        <div class="swiper-pagination"></div>
+        <!-- 矢印ボタン -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="work-content">
+        <h3>ポーカータイマーポケット</h3>
+        <p class="category">自社企画/開発</p>
+        <p>
+          自社企画/開発のホームポーカー用のブラインドタイマー。
+          直感的に使いやすく、シンプルで見やすい、そして眺めていても美しいタイマーが欲しいという想いから開発。
+          経験者でも組むのが大変なブラインドストラクチャーは「オートストラクチャー機能」で、
+          AIが導き出すアルゴリズムを用い最適な設定を生成出来る。
+          またタイマー画面のビジュアライザーには9つの魅惑的なシェーダーアニメーションを内蔵。
+          各社アプリストアで好評発売中。
+        </p>
+      </div>
     </div>
 
-    <div class="work-content">
-      <h3>ポーカータイマーポケット</h3>
-      <p class="category">自社企画/開発</p>
-      <p>
-        自社企画/開発のホームポーカー用のブラインドタイマー。
-        直感的に使いやすく、シンプルで見やすい、そして眺めていても美しいタイマーが欲しいという想いから開発。
-        経験者でも組むのが大変なブラインドストラクチャーは「オートストラクチャー機能」で、
-        AIが導き出すアルゴリズムを用い最適な設定を生成出来る。
-        またタイマー画面のビジュアライザーには9つの魅惑的なシェーダーアニメーションを内蔵。
-        各社アプリストアで好評発売中。
-      </p>
+    <!-- 事例2: VPIPカウンター -->
+    <div class="work-item">
+      <div class="work-images swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/vpip01.png" alt="VPIPカウンター 画像1"></div>
+          <div class="swiper-slide"><img src="images/vpip01.png" alt="VPIPカウンター 画像2"></div>
+        </div>
+        <!-- ページネーション -->
+        <div class="swiper-pagination"></div>
+        <!-- 矢印ボタン -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="work-content">
+        <h3>VPIPカウンター</h3>
+        <p class="category">自社企画/開発</p>
+        <p>
+          ポーカーのプレイスタイルを把握するのにVPIPは大事な指標です。
+          このアプリではプレイ中のハンドをタップで記録していくことで、VPIPがリアルタイムで計算され表示されます。
+          このVPIPの値は大会やトーナメントごとに保存ができ、あとで振り返って分析出来ます。
+          プレイが攻めすぎているのか、それとも保守的すぎるのかを客観的に把握して
+          次回プレイの戦略に生かすことができます。
+          ニッチだけれど需要はある、マニアックなアプリです。
+        </p>
+      </div>
+    </div>
+
+    <!-- 事例3: Timerアプリ -->
+    <div class="work-item">
+      <div class="work-images swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/timer01.png" alt="Timerアプリ 画像1"></div>
+          <div class="swiper-slide"><img src="images/timer01.png" alt="Timerアプリ 画像2"></div>
+        </div>
+        <!-- ページネーション -->
+        <div class="swiper-pagination"></div>
+        <!-- 矢印ボタン -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="work-content">
+        <h3>Timerアプリ</h3>
+        <p class="category">自社企画/開発</p>
+        <p>
+          タイマー機能に特化したシンプルアプリ。
+          必要な機能だけを厳選し、ユーザーが迷わず使えるUIを目指しました。
+          設定した時間が視覚的にも直感的にも分かりやすく表示されるので、
+          日常の小さな時間管理からイベント運営まで幅広く活用できます。
+        </p>
+      </div>
     </div>
   </div>
-
-  <!-- 事例2: VPIPカウンター -->
-  <div class="work-item">
-    <div class="work-images slider">
-      <div class="slide"><img src="images/work-vpip-1.jpg" alt="VPIPカウンター 画像1"></div>
-      <div class="slide"><img src="images/work-vpip-2.jpg" alt="VPIPカウンター 画像2"></div>
-    </div>
-
-    <div class="work-content">
-      <h3>VPIPカウンター</h3>
-      <p class="category">自社企画/開発</p>
-      <p>
-        ポーカーのプレイスタイルを把握するのにVPIPは大事な指標です。
-        このアプリではプレイ中のハンドをタップで記録していくことで、VPIPがリアルタイムで計算され表示されます。
-        このVPIPの値は大会やトーナメントごとに保存ができ、あとで振り返って分析出来ます。
-        プレイが攻めすぎているのか、それとも保守的すぎるのかを客観的に把握して
-        次回プレイの戦略に生かすことができます。
-        ニッチだけれど需要はある、マニアックなアプリです。
-      </p>
-    </div>
-  </div>
-
 </section>
+
 
 
 <!-- VIZORAの強み -->

@@ -186,7 +186,7 @@ padding-bottom: 16px;
 .card-content h3 {
   font-size: 17.5px;
   font-weight: bold;
-  margin: 1rem 0;
+  margin: 16px 0;
   color: #00a693;
 }
 
@@ -196,6 +196,8 @@ padding-bottom: 16px;
   letter-spacing: 0.02em;
   color: #333;
   text-align: center;
+    padding-bottom: 24px;
+
 }
 
 /* =========================
@@ -277,6 +279,94 @@ padding-bottom: 16px;
   text-align: left;
   color: #565B70;
 }
+
+/* =========================
+   開発事例
+   ========================= */
+
+.works-list {
+  max-width: calc(400px * 3 + 32px * 2); /* 3列×400px + gap */
+  display: grid;
+  grid-template-columns: repeat(3, 400px); /* 固定幅400px */
+  gap: 32px; 
+  margin: 0 auto;
+  justify-content: center; /* 中央寄せ */
+}
+
+
+.work-item {
+  overflow: hidden;
+}
+
+
+/* Swiper ページネーション全体 */
+.work-images .swiper-pagination {
+  position: relative;       /* 相対配置 */
+  margin-top: 24px;         /* 画像の下24pxに配置 */
+  text-align: center;       /* 中央寄せ */
+}
+
+/* ドットのスタイル */
+.work-images .swiper-pagination-bullet {
+  background: rgba(86, 91, 112, 0.2); /* 非アクティブ時 */
+  opacity: 1;                         /* デフォルトの透過を無効にする */
+  width: 8px;
+  height: 8px;
+  margin: 0 6px;                      /* ドット間の余白 */
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+/* アクティブなドット */
+.work-images .swiper-pagination-bullet-active {
+  background: #565B70;
+}
+
+/* 開発事例スライダー画像 */
+.work-images .swiper-slide img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;   /* 画像を中央でトリミング */
+  display: block;
+  margin: 0 auto;      /* 中央寄せ */
+  border-radius: 18px;
+}
+
+
+/* Swiperのボタンとページネーション調整 */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #00B7B2;
+}
+
+.swiper-pagination-bullet {
+  background: #00B7B2;
+}
+
+.work-content h3 {
+  font-size: 17.5px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #565B70;
+  text-align: center;
+}
+
+.work-content .category {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  color: rgba(86, 91, 112, 0.6); /* 60% 不透明 (40%透過) */
+  text-align: center;
+}
+
+
+.work-content p {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #565B70;
+}
+
 
 /* =========================
    会社概要
